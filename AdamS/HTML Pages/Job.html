@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ideal Job</title>
+    <link rel="stylesheet" href="../CSS Styles/Styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+    <nav id="nav">
+        <a href="Index.html">Personal Information</a> &nbsp;
+        <a href="Interest.html">My Interest in IT</a> &nbsp;
+        <a href="Job.html">Ideal Job</a> &nbsp;
+        <a href="Profile.html">Personal Profile</a> &nbsp;
+        <a href="Project.html">Project Idea</a>
+    </nav>
+
+    <div id="main">
+        <h2>Ideal Job</h2>
+
+    <h3>Analyst Programmer</h3>
+
+    <a href="https://www.seek.com.au/job/56071447?type=standout#sol=fc5d92287ba39e372a438c92f358f3ee50276407" target="_blank">Job Application (SEEK)</a> <br><br>
+    <img src = "../Images/Ideal Job.PNG" height="621" width="723" id="img"/>
+
+    <h3>Position & Appeal - </h3>
+    <p>
+        <b>The position includes the following duties -</b> <br>
+        Building custom apps under business requirements <br>
+        Designing and supporting the business' database <br>
+        Planning/Designing/Developing app features <br>
+        Troubleshooting defects/issues in code
+    </p>
+
+    <p>
+        The appeal of this job is in utilising the skills i will have earned and earning some good money for it
+    </p>
+
+    <h3>Skills/Qualifications</h3>
+
+    <div id="Need">Need</div>
+    <div id="Ns">     
+        <p>Info Tech Degree</p>
+        <p>3+ years in Web Dev, System Integration, C#, ASP.Net</p>
+        <p>2+ years in SSMS, T-SQL</p>
+        <p>1+ years in Azure services (e.g. logic app, sharepoint online)</p>
+        <p>DevOps</p>
+        <p>Microsoft Office 365</p>
+    </div>
+
+    <div id="Have">Have</div>
+    <div id="Hs">
+        <p>Microsoft Office 365</p>
+    </div>   
+
+    <p>To obtain the skills I don't have I will work through this course and earn my Bachelors as well as all 
+        the skills that come with it. <br> As for the skills I cannot gain from this course, I will 
+        find tutorials online, read about them and try them out so that I can learn them. Using what I've learned, 
+        I will then write myself some examples to go back to if I ever need them.</p>    
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#Need").click(function(){
+                $("#Ns").slideToggle("slow");
+            });
+            $("#Have").click(function(){
+                $("#Hs").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>
