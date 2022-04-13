@@ -113,3 +113,14 @@
     text-align: left;
   }
 }
+#AdamProfile, #DarylProfile, #JayProfile, #LevianProfile, #JamesProfile
+{
+  display: none;
+}
+.B
+{
+  width: 200px;
+  height: 250px;
+  border: 5px solid black;
+  cursor: pointer;
+}
