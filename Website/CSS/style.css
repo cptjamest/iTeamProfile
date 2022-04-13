@@ -113,12 +113,10 @@
     text-align: left;
   }
 }
-#AdamProfile, #DarylProfile, #JayProfile, #LevianProfile, #JamesProfile
-{
+#AdamProfile, #DarylProfile, #JayProfile, #LevianProfile, #JamesProfile {
   display: none;
 }
-.B
-{
+.B {
   width: 200px;
   height: 250px;
   border: 5px solid black;
