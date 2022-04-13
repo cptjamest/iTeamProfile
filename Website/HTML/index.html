@@ -4,15 +4,17 @@
     <head>
         <meta charset="utf-8">
         <title>iTeam Profile Home</title>
-        <!-- Load external CSS styles -->
+        <!-- James Note - Load external CSS styles -->
         <link rel="stylesheet" href="../CSS/style.css">
+        <!-- Adam Note - Loads JavaScript Ajax form a Google server -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
 
         <h1>iTeam Profile</h1>
         
-        <!-- Load external JavaScript -->
+        <!-- James Note - Load external JavaScript -->
         <script src="../JS/script.js"></script>
 
         <div class="topnav">
@@ -22,10 +24,10 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="https://jay-j-williams.github.io/ABOUT-ME/" target="_blank">Jay M</a>
-                <a href="https://adz946.github.io/Assessment-One/HTML%20Pages/Index.html" target="_blank">Adam S</a>
-                <a href="https://dazjones88.github.io/Assessment-1-My-Profile/" target="_blank">Daryl </a>
-                <a href="https://cptjamest.github.io/IIT-Assignment-1/" target="_blank">James L</a>
+                <a href="https://jay-j-williams.github.io/ABOUT-ME/" target="_blank">Jay</a>
+                <a href="https://adz946.github.io/Assessment-One/HTML%20Pages/Index.html" target="_blank">Adam</a>
+                <a href="https://dazjones88.github.io/Assessment-1-My-Profile/" target="_blank">Daryl</a>
+                <a href="https://cptjamest.github.io/IIT-Assignment-1/" target="_blank">James</a>
                 <a href="./team_profile/levin_profile.html" target="_blank">Levian</a>
             </div>
         </div> 
@@ -38,9 +40,91 @@
 
         <h1>iTeam Profile</h1>
 
-        <h1>Ideal Jobs</h1>
+        <p>Team description here <br><br>
+            Click on an individual below to learn about them, their ideal job, and project idea</p>
 
-        <h1>Project Ideas</h1>
+        <div id="Members">
+            <button type="button" class="B" id="B1" style="background-image: url(../Images/Adam);"></button>
+            <button type="button" class="B" id="B2" style="background-image: url(../Images/Daryl);"></button>
+            <button type="button" class="B" id="B3" style="background-image: url(../Images/Jay);"></button>
+            <button type="button" class="B" id="B4" style="background-image: url(../Images/Levian);"></button>
+            <button type="button" class="B" id="B5" style="background-image: url(../Images/James);"></button>
+        </div>
+
+        <div id="AdamProfile">
+            <h2 id="Adam">Adam Profile</h2>
+            <div id="ProfileImages">
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+            </div>
+            <h2 id="Adam">Software Developer</h2>
+            <h2 id="Adam">Digital Card Game</h2>
+        </div>
+
+        <div id="DarylProfile">
+            <h2 id="Daryl">Daryl Profile</h2>
+            <div id="ProfileImages">
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+            </div>
+            <h2 id="Daryle">Junior Front End Developer</h2>
+            <h2 id="Daryle">Home HealthCare Automation System</h2>
+        </div>
+
+        <div id="JayProfile">
+            <h2 id="Jay">Jay Profile</h2>
+            <div id="ProfileImages">
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+            </div>
+            <h2 id="Jay">Software Engineer</h2>
+            <h2 id="Jay">Python Made Game</h2>
+        </div>
+
+        <div id="LevianProfile">
+            <h2 id="Levian">Levian Profile</h2>
+            <div id="ProfileImages">
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+            </div>
+            <h2 id="Levian">Generalist Programmer</h2>
+            <h2 id="Levian">?_?</h2>
+        </div>
+
+        <div id="JamesProfile">
+            <h2 id="James">James Profile</h2>
+            <div id="ProfileImages">
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+                <img src="../Images/A" width="300" height="300" />
+            </div>
+            <h2 id="James">Machine Learning Engineer</h2>
+            <h2 id="James">Neighbourhood Item Share App</h2>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#B1").click(function(){
+                    $("#AdamProfile").slideToggle("slow");
+                });
+                $("#B2").click(function(){
+                    $("#DarylProfile").slideToggle("slow");
+                });
+                $("#B3").click(function(){
+                    $("#JayProfile").slideToggle("slow");
+                });
+                $("#B4").click(function(){
+                    $("#LevianProfile").slideToggle("slow");
+                });
+                $("#B5").click(function(){
+                    $("#JamesProfile").slideToggle("slow");
+                });
+            });
+        </script>
         
     </body>
 
