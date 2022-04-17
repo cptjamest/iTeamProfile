@@ -113,12 +113,30 @@
     text-align: left;
   }
 }
-#AdamProfile, #DarylProfile, #JayProfile, #LevianProfile, #JamesProfile {
+#Adam, #Daryl, #Jay, #Levian, #James
+{
   display: none;
+  padding: 5%;
 }
-.B {
+.BP
+{
   width: 200px;
-  height: 250px;
+  height: 200px;
   border: 5px solid black;
   cursor: pointer;
+}
+.BT
+{
+  width: 250px;
+  height: 125px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+background-image
+{
+  object-fit: cover;
+}
+#Cred
+{
+  text-align: end;
 }
